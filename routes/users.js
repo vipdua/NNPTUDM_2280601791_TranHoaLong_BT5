@@ -1,8 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-const User = require('../models/User');
-
+const User = require('../schemas/users');
 
 // GET all users (query username includes)
 router.get('/', async function (req, res) {
